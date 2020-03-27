@@ -1,0 +1,96 @@
+
+\documentclass[a4paper,12pt]{article}
+%\usepackage[]{showkeys}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsthm, amssymb,mathrsfs,amsfonts}
+\usepackage{array}
+\usepackage[active]{srcltx}
+\usepackage{graphicx}
+\usepackage[margin=3cm]{geometry}
+\usepackage[spanish]{babel}
+%\usepackage{hyperref}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{color}
+\usepackage[natbibapa]{apacite} 
+
+%\setlength{\parindent}{0 pt}
+
+\usepackage[colorlinks=true,
+linkcolor=blue, filecolor=webbrown,
+citecolor=webgreen]{hyperref}
+
+%\definecolor{webgreen}{rgb}{0,.5,0}
+%\definecolor{webbrown}{rgb}{.6,0,0}
+
+\theoremstyle{definition}
+\newtheorem{ejem}{Ejemplo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\car{\mathop{\rm car}\nolimits}
+\def\ker{\mathop{\rm ker}\nolimits}
+\def\supp{\mathop{\rm supp}\nolimits}
+\def\t{\mathop{\rm t }\nolimits}
+\def\tl{\mathop{\rm t^L}\nolimits}
+\def\tnil{\mathop{\rm t_{nil}}\nolimits}
+\def\cl{\mathop{\rm cl}\nolimits}
+\def\sl{\mathop{\rm Syl_p}\nolimits}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{ \bf Ensayo Informatica II:
+              La computación y su origen poco reconocido}
+\author{\textsc{Simón Sánchez Rúa} \\ Universidad de Antioquia}
+
+
+ \date{}
+\begin{document}
+\maketitle
+ \noindent
+
+
+
+
+
+
+\section{Introducción}
+Fundamentos, bases u orígenes de algo, son la principal derivación de una “guerra” de teorías en la cual parecía haber un claro ganador, pero hasta la armadura más fuerte tiene un punto débil, justo esta debilidad fue la que logro dar fin a esa crisis o “guerra” y además fue descubierto que no era pate de ningún bando más que la misma matemática, muchos dicen que las guerra son los puntos de inflexión en el desarrollo de la ciencia debido a que en esos momentos se han dado grandes inventos  tanto teóricos como físicos que lograron definir los métodos y objetivos necesarios para desarrollar la lógica computacional de la actualidad, pero y ¿Cómo la crisis de los fundamentos ocasionó el nacimiento de la computación moderna?
+
+
+
+
+
+\section{Contenido}
+Computación, dícese de “conjunto de conocimientos científicos y de técnicas que hacen posible el tratamiento automático de la información por medio de computadoras.” \citep{ecured} es un alto estándar de la sociedad actual y de la cual dependen demasiados sistemas tanto financieros, sociales, políticos, de salud, etc. Cada uno usando el cómputo de la forma que más  lo conviene, específicamente demostrando lo maleable que es la ciencia de la computación, sin embargo para entender esta ciencia se debe tener muy presente la idea facilitar la realización de operaciones matemáticas que son muy extensas para una personas, a través de máquinas que logren hacer repetidamente análisis de información y ejecutar lo necesario para llegar al resultado esperado.
+
+Aunque es verdad que las computadoras y vestigios de la computación se han visto desde épocas antiguas de la humanidad, el verdadero auge de la computación arrancó gracias a lo inalcanzable, “el infinito y más allá” del que tanto Buzz Lightyear, ese infinito que es un término inalcanzable es en realidad más inalcanzable gracias a que un hombre logró entender muy bien que “lo que no se soluciona pasando página, se lo soluciona cambiando de libro”, justo cambiar su visión logro hacer que Georg Cantor se postulará como el descubridor del infinito, abandonó los fundamentos matemáticos que le habían impuesto (como los de Euclides, Pitágoras, Aristóteles, etc) y pensó que sí se puede agrupar números con muchos dígitos resultando increíblemente grandes, esto no tendría fin y cada vez se haría más y más complejo (además de tedioso y extenso), por ello él pensó que si los números no tienen fin, para que estos numero enormes incalculables con todas leyes de matemáticas vigentes deben hacer parte de un conjunto llamado infinito, en el cual se entendían a números inimaginables como parte de un conjunto calculable , pero la gran idea de Cantor por mucho tiempo fue ignorada por muchos matemáticos diciendo que eso era inválido, hasta que empezaron a aceptar tu descubrimiento. Cantor logró descubrir un término que actualmente ha permitido calcular cantidades enormes que antes eran limitadas por nuestro ojo o cerebro y también calcular cosas infinitamente pequeñas, ambas cosas juntas planteándose como calculo infinitesimal, sin embargo cada persona que ha hecho algo en su vida significativo para la humanidad ha tenido durante su carrera un declive enorme del cual solo salen los que de verdad quieren superarse a sí mismo, aunque este punto en la carrera de Cantor fue superado, este declive que se llamó como la crisis de los fundamentos se llevó una tajada de la teoría con ella.
+
+La crisis de los fundamentos fue originada por la creación del infinito debido a su incoherencia sobre su conjunto en sí, puesto que si el conjunto es un número enorme que no tiene fin, dentro del mismo hay otro infinito más pequeño pero que sigue siendo infinito, lo mismo dentro de este y así de manera infinita, lo que lleva a una incoherencia puesto que si el conjunto contiene a otro conjunto es un conjunto que contiene a otro infinito, siendo este conjunto que contiene a otro infinito parte de sí mismo si se analiza lógicamente. Gracias a tal incoherencia se dio una crisis en la cual se dividieron las personas entre que unos ya pensaban que las matemáticas no eran infalibles y las otras en que si eran funcionales sin importar el caso, donde la segunda división deliberaron que no era necesario desechar la teoría de conjuntos si se lograba corregirla mediante un programa que a través del uso de axiomas se lograran formular a partir de la lógica teoremas, los cuales se supone serían siempre consistentes (no se puede decir que un teorema que diga algo verdadero y otro que lo contradiga) y que para resolver tales teoremas se necesitaría un número de pasos finitos (la idea inicial de la programación), sin embargo un hombre llamado Kurt Gödel logró demostrar que esto no se podía por el hecho de que aunque usando una gran cantidad de axiomas no hay nada que nos asegure como tal que si bien en todos los casos abarcados el teorema no tenga un problema, en el siguiente caso no funcione, ya que según Cantor los números son infinitos y por ello es imposible saber si en algún numero gigante dejaría de funcionar un teorema, por ello se desmintió por completo tal programa y se logró llegar a que no todo problema tiene una solución del todo correcta, pero no por ello todas las otras en las que si ha funcionado dejan de ser válidas y utilizables.
+
+Después de tan increíble serie de acontecimientos se llegó al nacimiento como tal de la computación, esto gracias a Alan Turing, joven que es muy conocido por haber descifrado los códigos alemanes en la guerra mundial a través de una maquina automática que los traducía, sin embargo su trabajo más importante realmente es su máquina universal, la cual consistía en una aguja que escribía sobre un papel y lograba escribir entre 1 y 0, de la cual (junto a la lógica de Gödel) pudo darse cuenta que ninguna computadora lograría resolver todos los problemas que se le ponga debido a que no podemos abarcar todos los casos posibles en los cuales podría presentar un error, ya que la mente humana tiene limitaciones y por ello demostró por completo la afirmación de Gödel, pero además de demostrar que una maquina con suficientes repeticiones de operaciones puede resolver una enorme cantidad de problemas por más complejos que sean, solo que esto varía en el tiempo de solución y los problemas podrían a llegar a tomar mucho tiempo. Justamente por este pensamiento del funcionamiento de su máquina y de la solución de problemas a través de la repetición continua de pasos, la cual es la lógica básica de cualquier celular y computador de nuestra sociedad actual siendo lo primordial para diseñar un sistema computacional desde cero.
+
+
+\section{Conclusión}
+Pensar en lo infinito no solo llevó a entender que hasta lo que no tiene fin tiene límites, que hasta lo más perfecto podría presentar un error que no tenemos delante nuestro, ya que nuestro conocimiento se limita a lo que alcanzamos a ver o imagina, pero tanto nuestro ojo como nuestro cerebro tiene limitaciones y por ello no podemos saber si hay algún error que haga de nuestro planteamiento supuestamente perfecto dejar de serlo, lo cual no hizo que la matemática dejara de ser útil, simplemente demostró que hasta los números y sus usos no son infalibles, pero esta misma probabilidad de error logró hacer que Alan Turing quisiera usar su máquina para afianzar la misma y demostrar que ni una máquina que hiciera autónomamente problemas lograría resolver ciertos problemas porque no todos los programas pueden ser computados, sin embargo la búsqueda por demostrar tal cosa le llevó a cimentar las bases de la computación a través de formular que todo problema puede ser resuelto si se le realizan ciertas operaciones indicadas repetidamente hasta llegar a la respuesta y de esa forma hacer que más y más personas desearan mejorar este método a través de mejores componentes e ideas que permitieran facilitar la aplicación es estos procesos repetidamente, todo sumado permitió llegar a la computación actual y “Así, la aparente barrera que había descubierto Gödel, no solo no acotó el potencial de las matemáticas, sino que ayudó a imaginar la máquina que más límites ha hecho saltar a la humanidad.” \citep{Maestre}. 
+
+
+
+
+
+
+\nocite{Cabezon,Crespo,Paez,Pais}
+\bibliographystyle{apacite}
+\bibliography{ejemplo_biblio}
+
+\end{document}
+
+
+
+
+
+
+
+
+
