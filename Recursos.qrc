@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Animations">
+        <file>Pacman200%-export1.png</file>
+        <file>Pacman200%-export2.png</file>
+        <file>Pacman200%-export3.png</file>
+    </qresource>
+    <qresource prefix="/Fondos">
+        <file>BackgroundPac.png</file>
+        <file>BlankBackground.png</file>
+    </qresource>
+</RCC>
